@@ -99,7 +99,7 @@ alert:
 
 ## 📦 Installation
 
-1. Download the latest `DirtyDetect.jar` from the [Releases](https://github.com/romix42/DirtyDetect/releases) page.
+1. Download the latest `DirtyDetect.jar` from the [Releases](../../releases) page.
 2. Place the `.jar` file into your server's `plugins/` folder.
 3. Start or restart your server -> the plugin will generate a default `config.yml` inside `plugins/DirtyDetect/`.
 4. Edit `config.yml` to your liking (notification mode, detection command, prefix, mods, etc.).
@@ -109,4 +109,4 @@ alert:
 
 ## 📄 License
 
-This project uses the [CC BY-NC 4.0](https://github.com/romix42/DirtyDetect/?tab=License-1-ov-file) license.
+This project uses the [CC BY-NC 4.0](../../blob/main/LICENSE) license.
