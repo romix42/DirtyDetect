@@ -28,6 +28,7 @@ If you discover a security vulnerability in DirtyDetect, follow these steps:
    - Steps to reproduce the issue
    - Potential impact (e.g. detection bypass, server crash, privilege escalation)
    - Your suggested fix, if you have one
+   - If possible, notify me through discord (DMs, tickets).
 
 You can expect an **acknowledgement within 72 hours** and a resolution or status update
 within **14 days**, depending on complexity.
