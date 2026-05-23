@@ -1,0 +1,27 @@
+name: DirtyDetect
+version: '1.0'
+main: me.romix.Main
+api-version: '1.20'
+authors: [ romix_42 ]
+description: Detects hacked clients using sign packets.
+website: https://modrinth.com/plugin/dirtydetect
+
+commands:
+  dirtydetect:
+    description: DirtyDetect main command.
+    usage: /dirtydetect [reload | version]
+    aliases: [ dd, detect ]
+
+permissions:
+
+  dirtydetect.bypass:
+    description: Skips the mod-detection scan entirely on join.
+    default: op
+
+  dirtydetect.staff:
+    description: Receive detection alerts and punishment announcements.
+    default: op
+
+  dirtydetect.reload:
+    description: Reload the DirtyDetect configuration.
+    default: op

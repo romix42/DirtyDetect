@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+    id("xyz.jpenilla.run-paper") version "2.3.1"
+    id "com.gradleup.shadow" version "8.3.3"
+}
+
+group = 'me.romix'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven {
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
+    }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+
+    implementation 'com.github.NahuLD:folia-scheduler-wrapper:v0.0.3'
+    implementation 'net.kyori:adventure-text-minimessage:5.1.1'
+}
+
+tasks {
+    shadowJar {
+        relocate 'me.nahu.scheduler.wrapper', 'me.romix.libs.scheduler'
+
+        archiveClassifier.set('')
+        mergeServiceFiles()
+    }
+    build {
+        dependsOn(shadowJar)
+    }
+    runServer {
+        minecraftVersion("1.21.11")
+    }
+}
+
+java {
+    def javaVersion = JavaVersion.toVersion(21)
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release.set(21)
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
