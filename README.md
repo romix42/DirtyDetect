@@ -1,4 +1,5 @@
 [![donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=KPXD92CM944RL)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L71Q7HGY)
 
 ![Dirty Detect](https://cdn.modrinth.com/data/cached_images/deb1dcd29fc64a21103211bd4486afa7eb4183f6.png)
 
