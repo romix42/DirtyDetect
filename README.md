@@ -100,14 +100,16 @@ alert:
 
 ## 📦 Installation
 
-1. Download the latest `DirtyDetect.jar` from the [Releases](../../releases) page.
+1. Download the latest `DirtyDetect.jar` from the [Releases](https://modrinth.com/plugin/dirtydetect#download) page.
 2. Place the `.jar` file into your server's `plugins/` folder.
 3. Start or restart your server -> the plugin will generate a default `config.yml` inside `plugins/DirtyDetect/`.
 4. Edit `config.yml` to your liking (notification mode, detection command, prefix, mods, etc.).
 5. Run `/dirtydetect reload` to apply any changes without a restart.
 
+[![bStats](https://bstats.org/signatures/bukkit/Dirty%20Detect.svg)](https://bstats.org/plugin/bukkit/Dirty%20Detect/31534)
+
 ---
 
 ## 📄 License
 
-This project uses the [CC BY-NC 4.0](../../blob/main/LICENSE) license.
+This project uses the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
