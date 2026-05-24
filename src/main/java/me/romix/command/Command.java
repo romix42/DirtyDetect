@@ -41,7 +41,7 @@ public class Command implements CommandExecutor, TabCompleter {
 
 		try {
 			plugin.getConfigUtil().reload();
-			sender.sendMessage(Config.format("<##74fd7b>✔ ꜱᴜᴄᴄᴇꜱꜱ: <##92ff60>Config reloaded successfully."));
+			sender.sendMessage(Config.format("<#74fd7b>✔ ꜱᴜᴄᴄᴇꜱꜱ: <#92ff60>Config reloaded successfully."));
 		} catch (Exception e) {
 			sender.sendMessage(Config.format("<#fd7474>❌ ᴇʀʀᴏʀ: <#ff6060>Failed to reload the config."));
 			plugin.getLogger().severe("Error while reloading the config: " + e.getMessage());
@@ -60,7 +60,7 @@ public class Command implements CommandExecutor, TabCompleter {
 		if (sender.hasPermission("dirtydetect.reload")) {
 			if (plugin.isUpdateAvailable()) {
 				sender.sendMessage(prefix.append(Config.format(
-						" <##ff6060>Update available: <white>v" + plugin.getLatestVersion() + 
+						" <#ff6060>Update available: <white>v" + plugin.getLatestVersion() + 
 						" <reset><click:open_url:'" + Main.MODRINTH_URL + "'><#78B7FF><underlined>" + Main.MODRINTH_URL + "<reset>")));
 			} else {
 				sender.sendMessage(prefix.append(Config.format(" <#92ff60>You are running the latest version.")));
