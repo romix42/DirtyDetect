@@ -1,5 +1,5 @@
 name: DirtyDetect
-version: '1.0'
+version: '1.1'
 main: me.romix.Main
 api-version: '1.20'
 authors: [ romix_42 ]
