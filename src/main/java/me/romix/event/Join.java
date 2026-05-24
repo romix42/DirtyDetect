@@ -154,7 +154,6 @@ public class Join implements Listener {
 
             final Config.ModEntry detectedMod = mod;
             Main.getWrappedScheduler().runTaskAtEntity(player, () -> {
-                // Player may have been kicked by an earlier detection in this batch
                 if (player.isOnline()) {
                     config.handleDetection(detectedMod, player);
                 }

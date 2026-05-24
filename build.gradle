@@ -1,15 +1,15 @@
 plugins {
-    id 'java'
-    id("xyz.jpenilla.run-paper") version "2.3.1"
+    id "java"
+    id "xyz.jpenilla.run-paper" version "2.3.1"
     id "com.gradleup.shadow" version "8.3.3"
 }
 
-group = 'me.romix'
-version = '1.0'
+group = "me.romix"
+version = "1.0"
 
 repositories {
     mavenCentral()
-    maven { url 'https://jitpack.io' }
+    maven { url "https://jitpack.io" }
     maven {
         name = "papermc-repo"
         url = "https://repo.papermc.io/repository/maven-public/"
@@ -19,15 +19,22 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
 
-    implementation 'com.github.NahuLD:folia-scheduler-wrapper:v0.0.3'
-    implementation 'net.kyori:adventure-text-minimessage:5.1.1'
+    implementation "com.github.NahuLD:folia-scheduler-wrapper:v0.0.3"
+    implementation "net.kyori:adventure-text-minimessage:5.1.1"
+    implementation "org.bstats:bstats-bukkit:3.2.1"
 }
 
 tasks {
     shadowJar {
-        relocate 'me.nahu.scheduler.wrapper', 'me.romix.libs.scheduler'
+    	    configurations = [project.configurations.runtimeClasspath]
+        dependencies {
+	        exclude { it.moduleGroup != "org.bstats" }
+	    }
 
-        archiveClassifier.set('')
+		relocate "org.bstats", project.group.toString()
+        relocate "me.nahu.scheduler.wrapper", "me.romix.libs.scheduler"
+        
+        archiveClassifier.set("")
         mergeServiceFiles()
     }
     build {
@@ -45,15 +52,15 @@ java {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
+    options.encoding = "UTF-8"
     options.release.set(21)
 }
 
 processResources {
     def props = [version: version]
     inputs.properties props
-    filteringCharset 'UTF-8'
-    filesMatching('plugin.yml') {
+    filteringCharset "UTF-8"
+    filesMatching("plugin.yml") {
         expand props
     }
 }

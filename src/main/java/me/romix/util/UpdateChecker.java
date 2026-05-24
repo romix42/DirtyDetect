@@ -17,7 +17,7 @@ public class UpdateChecker implements Runnable {
 
     private static final int TIMEOUT_MS = 6_000;
 
-    private final Main   plugin;
+    private final Main plugin;
     private final Logger logger;
 
     public UpdateChecker(Main plugin) {

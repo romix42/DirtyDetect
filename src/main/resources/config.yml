@@ -14,10 +14,8 @@ broadcast-to-all: true # Default true
 
 # Placeholders: %player%, %mod%
 messages:
-  punished: " <white>Player <yellow>%player%</yellow> was caught using \
-<red>%mod%</red> and has been punished."
-  alert: " <gold>[ALERT] <white>Player <yellow>%player%</yellow> may be \
-using <gold>%mod%</gold>."
+  punished: " <white>Player <yellow>%player%</yellow> was caught using <red>%mod%</red> and has been punished."
+  alert: " <gold>[ALERT] <white>Player <yellow>%player%</yellow> may be using <gold>%mod%</gold>."
 
 punish:
   command: "ban %player% [Dirty Detect] Hacked client detected (%mod%)."
