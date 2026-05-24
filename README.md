@@ -1,4 +1,5 @@
 [![donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=KPXD92CM944RL)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L71Q7HGY)
 
 ![Dirty Detect](https://cdn.modrinth.com/data/cached_images/deb1dcd29fc64a21103211bd4486afa7eb4183f6.png)
 
@@ -99,7 +100,7 @@ alert:
 
 ## 📦 Installation
 
-1. Download the latest `DirtyDetect.jar` from the [Releases](https://modrinth.com/plugin/dirtydetect#download) page.
+1. Download the latest `DirtyDetect.jar` from the [Releases](../../releases) page.
 2. Place the `.jar` file into your server's `plugins/` folder.
 3. Start or restart your server -> the plugin will generate a default `config.yml` inside `plugins/DirtyDetect/`.
 4. Edit `config.yml` to your liking (notification mode, detection command, prefix, mods, etc.).
@@ -109,4 +110,4 @@ alert:
 
 ## 📄 License
 
-This project uses the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+This project uses the [CC BY-NC 4.0](../../blob/main/LICENSE) license.
