@@ -1,7 +1,20 @@
+<div align="center">
+  
+  [![romix42 - DirtyDetect](https://img.shields.io/static/v1?label=romix42&message=DirtyDetect&color=blue&logo=github)](https://github.com/romix42/DirtyDetect "Go to GitHub repo")
+  [![stars - DirtyDetect](https://img.shields.io/github/stars/romix42/DirtyDetect?style=social)](https://github.com/romix42/DirtyDetect)
+
+</div>
+<br>
+<br>
+
 [![donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=KPXD92CM944RL)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L71Q7HGY)
 
+<div align="center">
+
 ![Dirty Detect](https://cdn.modrinth.com/data/cached_images/deb1dcd29fc64a21103211bd4486afa7eb4183f6.png)
+
+</div>
 
 > A lightweight Minecraft plugin that detects hack clients by exploiting the **Sign Translation 'Vulnerability'**. 
 
@@ -109,7 +122,13 @@ alert:
 [![bStats](https://bstats.org/signatures/bukkit/Dirty%20Detect.svg)](https://bstats.org/plugin/bukkit/Dirty%20Detect/31534)
 
 ---
-
+<div align="center">
+  
 ## 📄 License
 
 This project uses the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
+<br>
+
+[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+</div>
